@@ -1,6 +1,6 @@
 # Glow On-Click Button
 
-This is a stylized submit button that has an outer ring that glows when you click the "Start" button.  
+This is a stylized submit button that has an outer ring that glows when you click the "Start" button.  [Deployment Link] (https://gkgaines14.github.io/glowing_submit-start_button/)
 
 ### Screenshot
 
