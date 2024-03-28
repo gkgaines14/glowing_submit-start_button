@@ -1,4 +1,4 @@
-# Glow-on-Submit Button
+# Glow On-Click Button
 
 This is a stylized submit button that has an outer ring that glows when you click the "Start" button.  
 
