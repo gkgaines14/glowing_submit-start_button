@@ -1,0 +1,113 @@
+:root {
+  --color-text: #f8f8f8;
+  --color-background: hsl(230, 43%, 13%);
+  --color-primary: #232fb3;
+  --color-primary2: rgb(31, 41, 82);
+  --color-dark: #191d2d;
+  --color-accent-light: #28af60;
+  --color-accent-medium: rgb(42, 122, 74);
+  --color-accent-dark: #17472b;
+  --color-shadow: #333;
+  --form-shadow: rgba(178, 177, 177, 0.638);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+}
+
+#button-card {
+  background-color: var(--color-primary2);
+  width: 90%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn-component {
+  background-color: var(--color-dark);
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#btn-glow {
+  position: absolute;
+  background: radial-gradient(
+    var(--color-accent-medium) 65%,
+    var(--color-accent-light) 70%
+  );
+  box-shadow: 0 0 15px 8px var(--color-accent-medium);
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  transition: 1.3s;
+  opacity: 0;
+  z-index: 1;
+}
+
+#submit-btn {
+  background: rgb(233, 233, 233);
+  color: var(--color-accent-medium);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: green 4px solid;
+  transition: 500ms;
+  z-index: 2;
+}
+.big-font {
+  font-size: 3.4rem;
+}
+
+#btn-text {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#btn-back {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    var(--color-accent-medium) 45%,
+    rgba(0, 0, 255, 0) 75% /* var(--color-dark) 75% */
+  );
+  height: 230px;
+  width: 230px;
+  box-shadow: 0 0 18px 2px var(--color-accent-medium);
+  border-radius: 50%;
+}
+
+#submit-btn:hover {
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #33b146;
+  color: rgb(145, 198, 132);
+  /* -webkit-text-stroke-color: #23a85c;
+  color: rgb(74, 200, 39); */
+  /* color: rgb(59, 189, 23); */
+  background: rgb(255, 255, 255);
+}
